@@ -1,0 +1,6 @@
+cd fakebook
+// add some test files...
+git add file.txt
+git commit -a
+// Type message here
+git push
