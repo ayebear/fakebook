@@ -1,0 +1,16 @@
+body /* self explanatory */  
+{
+color: LightYellow; 
+}
+tr /* titles (might have to edit this) */ 1
+{
+color: Indigo; 
+font: bold 20pt sans-serif; 
+text-align: left; 
+}
+tr2 /* normal text (I guess the tags would be the same */ 
+{ 
+color: DarkViolet;
+font: 20pt san-serif; 
+text-align: left; 
+}
