@@ -17,10 +17,12 @@ $sql = "INSERT INTO $threads_table(title, username, datetime, rank, content)VALU
 $result = mysqli_query($con, $sql);
 
 if ($result) {
-    echo "<a href=index.php>Go back to homepage</a>";
+    header("Location: index.php");
+    exit();
 }
 else {
     echo "Error adding thread.";
+    echo "<a href=index.php>Go back to homepage</a>";
 }
 
 mysqli_close($con);

@@ -1,3 +1,8 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
 <?php
 
 include 'config.php';
@@ -30,8 +35,9 @@ while ($row = mysqli_fetch_array($result)) {
 
 mysqli_close($con);
 ?>
-
 <tr>
 <td colspan="5"><a href="new_thread.php">New Thread</a></td>
 </tr>
 </table>
+</body>
+</html>
