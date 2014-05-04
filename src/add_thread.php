@@ -11,13 +11,14 @@ $title = $_POST['title'];
 $username = $_POST['username'];
 $content = $_POST['content'];
 
-$datetime = date("d/m/y h:i:s");
+$datetime = date("y/m/d h:i:s");
 
-$sql = "INSERT INTO $threads_table(title, username, datetime, rank, content)VALUES('$title', '$username', '$datetime', '100', '$content')";
+$sql = "INSERT INTO $threads_table(title, username, datetime, rank, content)
+VALUES('$title', '$username', '$datetime', '0', '$content')";
 $result = mysqli_query($con, $sql);
 
 if ($result) {
-    header("Location: index.php");
+    header("Location: view_thread.php?id=" . mysqli_insert_id($con));
     exit();
 }
 else {

@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="style.css">
@@ -14,12 +15,12 @@ if (mysqli_connect_errno()) {
 
 $result = mysqli_query($con, "SELECT * FROM $threads_table ORDER BY id DESC");
 
-echo "<table border='1'>
+echo "<table class=\"threadTable\">
 <tr>
 <th>#</th>
 <th>Title</th>
 <th>Author</th>
-<th>Date/Time</th>
+<th>Date/Time (Y/M/D)</th>
 <th>Rank</th>
 </tr>";
 
