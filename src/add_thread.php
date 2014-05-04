@@ -16,14 +16,11 @@ $datetime = date("d/m/y h:i:s");
 $sql = "INSERT INTO $threads_table(title, username, datetime, rank, content)VALUES('$title', '$username', '$datetime', '100', '$content')";
 $result = mysqli_query($con, $sql);
 
-echo $result;
-
 if ($result) {
-    echo "Successful<BR>";
-    echo "<a href=index.php>View your topic</a>";
+    echo "<a href=index.php>Go back to homepage</a>";
 }
 else {
-    echo "ERROR";
+    echo "Error adding thread.";
 }
 
 mysqli_close($con);
