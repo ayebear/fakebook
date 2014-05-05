@@ -1,15 +1,32 @@
-body /* self explanatory */  
+table, td, th
 {
+font-family:sans-serif;
+font-size: 1.1em;
 }
-tr /* titles (might have to edit this) */ 1
+
+table, td
 {
-color: Indigo; 
-font: bold 20pt sans-serif; 
-text-align: left; 
+border: 1px solid green;
+text-align: center;
 }
-tr2 /* normal text (I guess the tags would be the same */ 
-{ 
-color: DarkViolet;
-font: 20pt san-serif; 
-text-align: left; 
+
+table
+{
+border-collapse: collapse;
+width: 100%;
+}
+
+td
+{
+background-color: #EAF2D3;
+padding: 12px;
+}
+
+th
+{
+font-style: bold;
+border: 1px solid black;
+text-align: center;
+background-color: green;
+color: white;
 }

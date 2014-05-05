@@ -10,11 +10,11 @@ if (mysqli_connect_errno()) {
 $title = $_POST['title'];
 $username = $_POST['username'];
 $content = $_POST['content'];
-
 $datetime = date("y/m/d h:i:s");
 
-$sql = "INSERT INTO $threads_table(title, username, datetime, rank, content)
-VALUES('$title', '$username', '$datetime', '0', '$content')";
+// Add the thread to the database
+$sql = "INSERT INTO $threads_table (title, username, datetime, rank, content)
+VALUES ('$title', '$username', '$datetime', '0', '$content')";
 $result = mysqli_query($con, $sql);
 
 if ($result) {
