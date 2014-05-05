@@ -14,12 +14,12 @@ $datetime = date("y/m/d h:i:s");
 
 // Get the next post ID
 $result = mysqli_query($con, "SELECT MAX(post_id) AS new_id FROM $posts_table WHERE thread_id='$thread_id'");
-$row = mysqli_fetch_array($result);
-if ($row) {
-	$post_id = $row['new_id'] + 1;
-}
-else {
-	$post_id = 1;
+$post_id = 1;
+if ($result) {
+    $row = mysqli_fetch_array($result);
+    if ($row) {
+        $post_id = $row['new_id'] + 1;
+    }
 }
 
 // Add the post to the database
@@ -32,7 +32,7 @@ if ($result) {
     exit();
 }
 else {
-    echo "Error adding post.";
+    echo "Error adding post.<br>";
     echo "<a href=index.php>Go back to homepage</a>";
 }
 
