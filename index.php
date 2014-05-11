@@ -7,6 +7,7 @@
 <?php
 
 include 'config.php';
+include 'header.php';
 
 $con = mysqli_connect("$host", "$username", "$password", "$db_name");
 if (mysqli_connect_errno()) {
