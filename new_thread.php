@@ -1,6 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
+<?php include('header.php') ?>
 
 <form action="add_thread.php" method="post">
 Title: <input type="text" name="title"><br>
@@ -9,5 +7,5 @@ Content: <textarea name="content" rows="5" cols="40"></textarea><br>
 <input type="submit">
 </form>
 
-</body>
-</html>
+<?php include('footer.php') ?>
+

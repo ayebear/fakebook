@@ -36,7 +36,15 @@ color: white;
 background-color: green;
 }
 
-#banner
-{
-text-align: center;
+#banner img{
+	width: 100%;
+	height: auto;
+	margin: 0 auto;
+}
+#banner {
+	width: 80%;
+	background-color: white;
+	height: 200px;
+	margin: 0 auto;
+	display: block;
 }

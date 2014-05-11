@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -9,5 +10,3 @@
 	    <img src = "static/img/banner.png" alt = "Fakebook Banner (banner.png)">
 	</a>
     </div>
-</body>
-</html>

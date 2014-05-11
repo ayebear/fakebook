@@ -1,9 +1,3 @@
-<!DOCTYPE html>
-<html>
-<head>
-<link rel="stylesheet" type="text/css" href="css/style.css">
-</head>
-<body>
 <?php
 
 include 'config.php';
@@ -43,6 +37,8 @@ $queryStr = "select * from ".$threads_table." order by datetime desc
   				limit ".$lowerLimit.",10;";
 $result = mysqli_query($con, $queryStr);
 
+echo "<div class='content'>";
+
 echo "<table class=\"threadTable\">
 <tr>
 <th>#</th>
@@ -73,5 +69,7 @@ mysqli_close($con);
   </td>
 </tr>
 </table>
-</body>
-</html>
+
+</div>
+
+<?php include('footer.php'); ?>
