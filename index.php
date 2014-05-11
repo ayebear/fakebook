@@ -61,6 +61,7 @@ while ($row = mysqli_fetch_array($result)) {
     echo "<td>" . $row['rank'] . "</td>";
     echo "</tr>";
 }
+mysqli_close($con);
 ?>
 <tr><td colspan="5"><a href="new_thread.php">New Thread</a></td></tr>
 <tr>
